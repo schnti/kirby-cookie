@@ -1,11 +1,9 @@
-
 $ka-cookie-bg: #222 !default;
 $ka-cookie-color: #fff !default;
 $ka-cookie-link-color: #31a8f0 !default;
 $ka-cookie-link-color-hover: #b2f7ff !default;
 $ka-cookie-btn-bg: #f1d600 !default;
 $ka-cookie-btn-color: #222 !default;
-
 
 .cookie_banner-wrapper {
   z-index: 9001;
@@ -67,13 +65,15 @@ $ka-cookie-btn-color: #222 !default;
     .cookie_message {
 
       a {
-        &:visited {
-          text-decoration: none;
-          color: $ka-cookie-link-color;
-          transition: 200ms color;
+        text-decoration: none;
+        color: $ka-cookie-link-color;
+        transition: 200ms color;
+
+        &:hover {
+          text-decoration: underline;
+          color: lighten($ka-cookie-link-color-hover, 5%);
         }
 
-        &:hover,
         &:active {
           color: $ka-cookie-link-color-hover;
         }
@@ -90,6 +90,10 @@ $ka-cookie-btn-color: #222 !default;
       text-align: center;
       cursor: pointer;
       width: 100%;
+
+      &:hover {
+        background-color: lighten($ka-cookie-btn-bg, 5%);
+      }
     }
 
     -webkit-animation-fill-mode: both;
