@@ -1,7 +1,7 @@
 <div class="cookie_banner-wrapper">
     <div class="cookie_container">
         <p class="cookie_message">
-			<?= $text; ?> <a href="><?= $link; ?>"><?= $linkText; ?></a>
+			<?= $text; ?> <a href="<?= $link; ?>"><?= $linkText; ?></a>
         </p>
         <button class="cookie_btn cookie_btn_accept_all" onclick="closeCookie()"><?= $buttonText; ?></button>
     </div>
