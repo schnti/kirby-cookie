@@ -34,9 +34,9 @@ $ka-cookie-btn-color: #222 !default;
 
 **Tracking**
 * ka.cookie.text: String (default: 'Diese Website benutzt Cookies, um seinen Lesern das beste Webseiten-Erlebnis zu ermöglichen.')
-* ka.cookie.linkText: String (default: 'Ich habe verstanden')
+* ka.cookie.linkText: String (default: '/datenschutzerklaerung')
 * ka.cookie.link: String (default: 'Mehr Infos')
-* ka.cookie.buttonText: String (default: '/datenschutzerklaerung')
+* ka.cookie.buttonText: String (default: 'Ich habe verstanden')
 
 
 ```php
@@ -48,7 +48,7 @@ c::set('ka.cookie.buttonText', 'Got It!');
 
 ## How to use it
 
-use this right before closing `</body>` tag and after jQuery
+use this right before closing `</body>` tag and after jQuery import
 
 ```php
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
