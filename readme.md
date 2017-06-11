@@ -32,18 +32,11 @@ $ka-cookie-btn-color: #222 !default;
 
 ### Config Variables
 
-**Tracking**
-* ka.cookie.text: String (default: 'Diese Website benutzt Cookies, um seinen Lesern das beste Webseiten-Erlebnis zu ermöglichen.')
-* ka.cookie.linkText: String (default: '/datenschutzerklaerung')
-* ka.cookie.link: String (default: 'Mehr Infos')
-* ka.cookie.buttonText: String (default: 'Ich habe verstanden')
+* ka.cookie.link: String (default: 'datenschutzerklaerung')
 
 
 ```php
-c::set('ka.cookie.text', 'This website uses cookies to ensure you get the best experience on our website.');
-c::set('ka.cookie.linkText', 'More info');
-c::set('ka.cookie.link', '/privacy');
-c::set('ka.cookie.buttonText', 'Got It!');
+c::set('ka.cookie.link', 'datenschutz');
 ```
 
 ## How to use it
