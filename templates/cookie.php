@@ -6,5 +6,5 @@
 </div>
 
 <script>
-    function closeCookie(){document.cookie="cookie-note=1;path=/",$(".cookie_banner-wrapper").slideUp()}document.cookie.indexOf("cookie-note=1")!=-1&&$(".cookie_banner-wrapper").hide();
+    function closeCookie(){document.cookie="cookie-note=1;path=/;max-age=864000",$(".cookie_banner-wrapper").slideUp()}document.cookie.indexOf("cookie-note=1")!=-1&&$(".cookie_banner-wrapper").hide();
 </script>

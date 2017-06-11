@@ -1,5 +1,5 @@
 function closeCookie() {
-    document.cookie = 'cookie-note=1;path=/';
+    document.cookie = 'cookie-note=1;path=/;max-age=864000'; // max-age=864000 = 10 Days
     $('.cookie_banner-wrapper').slideUp()
 }
 
