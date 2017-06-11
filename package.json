@@ -3,6 +3,6 @@
   "description": "kirby cookie approval plugin",
   "author": "Timo Schneider",
   "license": "MIT",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "type": "kirby-plugin"
 }
