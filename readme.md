@@ -24,6 +24,7 @@ $ka-cookie-link-color: #31a8f0 !default;
 $ka-cookie-link-color-hover: #b2f7ff !default;
 $ka-cookie-btn-bg: #f1d600 !default;
 $ka-cookie-btn-color: #222 !default;
+$ka-cookie-position: bottom-right !default; // top-left, top-right, bottom-left, bottom-right
 ```
 
 ```SCSS
