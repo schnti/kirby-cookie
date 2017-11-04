@@ -12,10 +12,6 @@ Copy or link the `cookie` directory to `site/plugins/` **or** use the [Kirby CLI
 kirby plugin:install schnti/kirby-cookie
 ```
 
-### Dependencies
-
-[jQuery](https://jquery.com) v2.*+
-
 ### CSS (SCSS)
 ```SCSS
 $ka-cookie-bg: #222 !default;
@@ -42,10 +38,8 @@ c::set('ka.cookie.link', 'datenschutz');
 
 ## How to use it
 
-use this right before closing `</body>` tag and after jQuery import
+use this right before closing `</body>` tag
 
 ```php
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 <?= cookie(); ?>
 ```

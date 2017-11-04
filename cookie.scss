@@ -6,7 +6,7 @@ $ka-cookie-btn-bg: #f1d600 !default;
 $ka-cookie-btn-color: #222 !default;
 $ka-cookie-position: bottom-right  !default;
 
-.cookie_banner-wrapper {
+#cookie_banner-wrapper {
   z-index: 9001;
   position: relative;
 
@@ -133,7 +133,7 @@ $ka-cookie-position: bottom-right  !default;
 }
 
 @media print {
-  .cookie_banner-wrapper {
+  #cookie_banner-wrapper {
     display: none
   }
 }
