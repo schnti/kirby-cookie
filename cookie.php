@@ -9,7 +9,7 @@ function cookie()
 	$pages = $site->pages();
 
 	$link = c::get('ka.cookie.link', 'datenschutzerklaerung');
-	$url = $pages->find($link);
+	$url = str::isURL($link) ? $link : $pages->find($link);
 
 	$data = array(
 		'text' => l::get('ka.cookie.text'),
