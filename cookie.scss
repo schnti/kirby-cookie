@@ -4,7 +4,7 @@ $ka-cookie-link-color: #31a8f0 !default;
 $ka-cookie-link-color-hover: #b2f7ff !default;
 $ka-cookie-btn-bg: #f1d600 !default;
 $ka-cookie-btn-color: #222 !default;
-$ka-cookie-position: bottom-right  !default;
+$ka-cookie-position: bottom-right !default;
 
 #cookie_banner-wrapper {
   z-index: 9001;
@@ -41,8 +41,6 @@ $ka-cookie-position: bottom-right  !default;
   .cookie_container {
 
     position: fixed;
-    left: 0;
-    right: 0;
 
     @if $ka-cookie-position == 'top-right' or $ka-cookie-position == 'top-left' {
       top: 0;
@@ -57,26 +55,27 @@ $ka-cookie-position: bottom-right  !default;
     box-sizing: border-box;
     font-size: 0.8em;
 
-    @media screen and (min-width: 500px) {
+    @media (max-width: 499px) {
+      left: 0;
+      right: 0;
+    }
+
+    @media (min-width: 500px) {
 
       width: 300px;
 
       @if $ka-cookie-position == 'top-right' {
         top: 20px;
         right: 20px;
-        left: initial;
       } @else if $ka-cookie-position == 'top-left' {
         top: 20px;
         left: 20px;
-        right: initial;
       } @else if $ka-cookie-position == 'bottom-left' {
         bottom: 20px;
         left: 20px;
-        right: initial;
       } @else {
         bottom: 20px;
         right: 20px;
-        left: initial;
       }
 
     }
